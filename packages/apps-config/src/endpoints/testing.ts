@@ -170,6 +170,13 @@ export function createTesting (t: TFunction, firstOnly: boolean, withSort: boole
       }
     },
     {
+      info: 'frost-testnet',
+      text: t('rpc.prod.frost-testnet', 'Frost Testnet', { ns: 'apps-config' }),
+      providers: {
+        'Frost Testnet': 'wss://frost-rpc.icenetwork.io:9944'
+      }
+    },
+    {
       info: 'Galital',
       isDisabled: true, // https://github.com/polkadot-js/apps/issues/6721
       text: t('rpc.test.galital', 'Galital PC2', { ns: 'apps-config' }),
